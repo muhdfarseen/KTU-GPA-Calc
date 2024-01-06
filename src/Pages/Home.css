@@ -1,0 +1,14 @@
+.Titlee{
+    
+    background: linear-gradient(92deg, #FFF 0.66%, #91929B 99.43%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardtable{
+    width: 50%;
+}
+
+
+
