@@ -27,44 +27,46 @@ function Gpa() {
                     </Table.Thead>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput hideControls min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
                     <Table.Tr>
                         <Table.Td>1</Table.Td>
-                        <Table.Td><NumberInput /></Table.Td>
-                        <Table.Td><Select placeholder="Pick value" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
+                        <Table.Td ><NumberInput min={0} max={10} /></Table.Td>
+                        <Table.Td><Select placeholder="Pick Grade" data={['S', 'A+', 'A', 'B+','B', 'C+', 'C', 'D','P', 'F']}/></Table.Td>
                     </Table.Tr>
+                    
+                    
                     
                 </Table>
             </Card>
