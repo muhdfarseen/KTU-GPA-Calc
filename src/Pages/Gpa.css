@@ -1,3 +1,9 @@
-.cardtable{
+.cardtable {
     min-width: 45%;
+}
+
+@media screen and (max-width: 768px) {
+    .cardtable {
+        min-width: 100%;
+    }
 }
