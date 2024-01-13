@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
-import {
-Tabs, rem, Group, Title, Text, Flex, Badge, Avatar, Divider, Button,
-ActionIcon, useMantineColorScheme, useComputedColorScheme, Paper, Card, Table, Select, NumberInput
-} from '@mantine/core';
-import { Sparkline , AreaChart } from '@mantine/charts';
-
+import { Title, Text, Flex, Button, Paper, Card, Table, Select, NumberInput } from '@mantine/core';
+import { AreaChart } from '@mantine/charts';
 import './Gpa.css'
-
 
 function Gpa() {
 
-    const [sgpa, setSgpa] = useState(null);
+    const [sgpa, setSgpa] = useState('0.00');
     const [subjects, setSubjects] = useState(Array.from({ length: 8 }, () => ({ credit: 0, grade: '' })));
 
     const calculateGpaPoints = (grade) => {
@@ -72,10 +67,10 @@ function Gpa() {
 
     const sparklineData = subjects.map((subject, index) => ({
         sub: `📔 ${index + 1}`,
-        'Grade Point' : calculateGpaPoints(subject.grade),
-      }));
+        'Grade Point': calculateGpaPoints(subject.grade),
+    }));
 
-    
+
 
     return (
         <div>
@@ -111,36 +106,36 @@ function Gpa() {
                                     </Table.Td>
                                 </Table.Tr>
 
-                                
+
                             ))}
-                                <Table.Tr>
-                                    <Table.Td></Table.Td>
-                                    <Table.Td></Table.Td>
-                                    <Table.Td><Button fullWidth radius="md" variant="filled" color="violet" onClick={calculatesgpa}>Calculate</Button></Table.Td>
-                                </Table.Tr>
+                            <Table.Tr>
+                                <Table.Td></Table.Td>
+                                <Table.Td></Table.Td>
+                                <Table.Td><Button fullWidth radius="md" variant="filled" color="violet" onClick={calculatesgpa}>Calculate</Button></Table.Td>
+                            </Table.Tr>
                         </Table>
-                        
+
                     </Card>
 
                     <Card shadow="sm" padding="lg" radius="md" withBorder mt={15} className='cardtable'>
-                        {sgpa !== null && (
-                            <>
-                                <Text fw={500} variant="gradient" gradient={{ from: 'violet', to: 'grape', deg: 90 }} style={{ fontSize: '120px' }}>
-                                    {sgpa}
-                                </Text>
-                                <AreaChart
-                                    h={300}
-                                    data={sparklineData}
-                                    dataKey="sub"
-                                    series={[
+
+                        <>
+                            <Text fw={500} variant="gradient" gradient={{ from: 'violet', to: 'grape', deg: 90 }} style={{ fontSize: '120px' }}>
+                                {sgpa}
+                            </Text>
+                            <AreaChart
+                                h={300}
+                                data={sparklineData}
+                                dataKey="sub"
+                                series={[
                                     { name: 'Grade Point', color: 'violet' },
-                                    ]}
-                                    curveType="linear"
-                                    tickLine="xy"
-                                    gridAxis="xy"
-                                />
-                            </>
-                        )}
+                                ]}
+                                curveType="linear"
+                                tickLine="xy"
+                                gridAxis="xy"
+                            />
+                        </>
+
                     </Card>
 
                 </Flex>
