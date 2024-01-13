@@ -61,9 +61,9 @@ function Home() {
             </Tabs>
 
 
-            <Divider my="sm" />
+            <Divider my="sm" mb={0} />
             <Group justify='center'>
-                <Text ta="center" size="xs" color='grey'>
+                <Text ta="center" size="xs" color='grey' mb={10} p={20}>
                     KTU follows 10 point grade scale.
                     SGPA and CGPA are calculated as the
                     weighted average of grade point multiplied
