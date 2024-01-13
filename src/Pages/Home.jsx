@@ -1,14 +1,6 @@
 import React from 'react'
-import { useEffect } from 'react';
-import {
-Tabs, rem, Group, Title, Text, Flex, Badge, Avatar, Divider,
-ActionIcon
-} from '@mantine/core';
+import { Tabs, rem, Group, Title, Text, Badge, Divider } from '@mantine/core';
 import { IconStarsFilled, IconStarFilled, IconBrandGoogleAnalytics } from '@tabler/icons-react';
-import { IconSunFilled, IconMoonStars } from '@tabler/icons-react';
-import cx from 'clsx';
-import classes from './Demo.module.css';
-import './Home.css'
 import Sgpa from './Gpa';
 import Cgpa from './Cgpa';
 import Imarks from './Imarks';
@@ -17,15 +9,10 @@ function Home() {
 
     const iconStyle = { width: rem(12), height: rem(12) };
 
-
     return (
-
         <div>
-
             <Tabs variant='pills' color='violet' pt={16} mx={16} defaultValue="sgpa" >
-
                 <Group justify="space-between">
-
                     <Title order={2} className='Title'>
                         KTU GPA Calculator
                         <Badge ml={10} variant="light" color="violet">2019 Scheme</Badge>

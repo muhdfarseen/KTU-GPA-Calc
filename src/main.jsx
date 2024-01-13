@@ -5,16 +5,14 @@ import '@mantine/core/styles.css';
 import '@mantine/charts/styles.css';
 import { MantineProvider } from '@mantine/core';
 
-
-
 ReactDOM.createRoot(document.getElementById('root')).render(
 
   <React.StrictMode>
-     <MantineProvider defaultColorScheme="dark" theme={{
-        fontFamily: 'Montserrat',
-        fontFamilyMonospace: 'Montserrat',
-        headings: { fontFamily: 'Montserrat'},
-      }}>
+    <MantineProvider defaultColorScheme="dark" theme={{
+      fontFamily: 'Montserrat',
+      fontFamilyMonospace: 'Montserrat',
+      headings: { fontFamily: 'Montserrat' },
+    }}>
 
       <App />
     </MantineProvider>
