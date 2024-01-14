@@ -1,3 +1,3 @@
 # KTU GPA Calculator
-### internal sgpa cgpa calculator 2019 scheme
+### Internal | Sgpa | Cgpa - Calculator 2019 scheme
 
